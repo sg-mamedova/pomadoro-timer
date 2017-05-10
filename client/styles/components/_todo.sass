@@ -1,0 +1,71 @@
+.glyphicon
+  top: 3px
+.btn-group
+  margin-bottom: 15px
+.b-todo-container
+  ul
+    list-style: none
+    margin-top: 15px
+    text-align: left
+    margin-bottom: 0
+    padding: 0
+    li
+      width: 100%
+      border-bottom: 1px solid #ccc
+      padding: 6px
+      word-wrap: break-word
+      &.todo-done
+        color: gray
+        text-decoration: line-through
+      .b-todo__text
+        padding-right: 30px
+        vertical-align: middle
+        word-break: break-word
+        display: inline-block
+      .b-todo__checkbox
+        vertical-align: middle
+        margin: 2px 0 0
+.b-btn
+  -webkit-border-radius: 3px
+  -moz-border-radius: 3px
+  border-radius: 3px
+  border: 1px solid #ccc
+  background-color: #ffffff
+
+.b-btn__remove, .b-btn__pin
+  width: 30px
+  height: 25px
+  position: absolute
+  right: 4px
+  top: 50%
+  margin-top: -12px
+
+li[pin-status="true"] .b-btn:focus
+    outline: red auto 5px
+.b-btn__pin
+  .glyphicon
+    top: 2px
+li[pin-status="true"] .glyphicon:before
+  color: red
+
+
+.b-btn__row
+  margin-top: 15px
+
+.markAllCompleted
+  width: 34px
+  height: 34px
+
+.clear-completed
+  padding: 7px
+  line-height: 1.2em
+  &:hover
+    color: #fff
+    background-color: #449d44
+    border-color: #398439
+
+.b-todos-left
+  color: #ffffff
+  line-height: 34px
+  span
+    margin-left: 4px

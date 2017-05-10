@@ -1,0 +1,62 @@
+.container
+  .row
+    .col-xs-12.col-sm-12.col-lg-6
+      .b-timer__task.text-center choose your task
+      .b-timer.text-center
+        .b-timer__val
+          span#timerMin
+          span :
+          span#timerSec
+      .b-timer__btn.text-center
+        button.btn.b-btn__start.btn-success(type='button') Start
+        button.btn.b-btn__reset(type='button', style="display:none;") Reset
+        button.btn.b-btn__breakReset(type='button', style="display:none;") Reset a break
+        button.btn.b-btn__break(type='button', style="display:none;") Take a break
+
+
+    .col-xs-12.col-sm-12.col-lg-6
+      .b-todo-container
+        .row
+          .col-xs-2.col-sm-2.text-left
+            button#markAllCompleted.markAllCompleted.b-btn
+              span.glyphicon.glyphicon-check(aria-hidden='true')
+          .col-xs-10.col-sm-10
+            input#todoText.form-control(type='text', placeholder='Make new todo')
+        .row
+          .col-xs-12.col-sm-12
+            ul#todoList.list-group
+        .row.b-btn__row
+          .col-xs-12.col-sm-3.text-left
+            span.b-todos-left
+              | Todos left:
+              span#todosLeft
+          .col-xs-12.col-sm-5
+            .btn-group(role='group')
+              button#showAll.btn.btn-default All
+              button#showActive.btn.btn-default Active
+              button#showCompleted.btn.btn-default Completed
+          .col-xs-12.col-sm-4.text-right
+            button#clearCompleted.b-btn.clear-completed Clear completed
+        #hollow.b-clone(style='display: none;')
+          li.list-group-item
+            input.b-todo__checkbox(type='checkbox')
+            span.b-todo__text Todo text
+            .b-timer__iteration
+              .b-round
+                img(src="img/pomodoro.png")
+                .b-round__box
+                  span x
+                  span.b-round__num
+
+            button.b-btn.b-btn__pin
+              span.glyphicon.glyphicon-flag(aria-hidden='true')
+
+
+
+audio(preload="auto")#pomoEndAudio
+  source(src='audio/alarm-clock.mp3', type='audio/mpeg')
+  source(src='audio/alarm-clock.wav', type='audio/wav')
+  | Тег audio не поддерживается вашим браузером.
+
+
+

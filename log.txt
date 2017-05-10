@@ -1,0 +1,15 @@
+
+D:\workspace\project\pomadoro-timer\server\server.js
+   1:1   error    Unexpected var, use let or const instead                                     no-var
+   2:1   error    Unexpected var, use let or const instead                                     no-var
+   3:1   error    Unexpected var, use let or const instead                                     no-var
+   3:1   error    Expected empty line after require statement not followed by another require  import/newline-after-import
+   4:1   error    Unexpected var, use let or const instead                                     no-var
+   8:25  warning  Unexpected unnamed function                                                  func-names
+   8:25  error    Unexpected function expression                                               prefer-arrow-callback
+   8:36  error    Missing space before opening brace                                           space-before-blocks
+   9:15  error    Strings must use singlequote                                                 quotes
+  10:4   error    Newline required at end of file but not found                                eol-last
+
+✖ 10 problems (9 errors, 1 warning)
+

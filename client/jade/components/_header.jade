@@ -1,0 +1,46 @@
+header.site-header
+  .container
+    .row
+      .col-xs-6.col-sm-6
+        a.b-logo(href='/', title='The Pomodoro Technique').
+          The Pomodoro Technique
+      .col-xs-6.col-sm-6.b-login__wrapp
+        #userName
+        .b-login.b-sign__in
+          button.btn.btn-success(type='button', data-toggle='modal', data-target='#signInModal') Sign in
+        .b-login.b-sign__up
+          button.btn.btn-primary(type='button', data-toggle='modal', data-target='#signUpModal') Sign up
+        .b-login.b-logout(style="display: none;")
+          a(href="#", class="b-link__logout") Log out
+// Modal
+#signInModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='signInLabel')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+        h4#signInLabel.modal-title Sign in
+      .modal-body
+        form
+          label Login:
+            input(type="text", name="login")
+          label Password:
+            input(type="password", name="password")
+          button(id="signInButton") Sign in
+
+
+#signUpModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='signUpLabel')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+        h4#signUpLabel.modal-title Modal title
+      .modal-body
+        .b-messages(style="display: none;")
+        form
+          label Login:
+            input(type="text", name="login")
+          label Password:
+            input(type="password", name="password")
+          button(id="signUpButton") Sign up
